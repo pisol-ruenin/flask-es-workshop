@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search engine</title>
+    </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <body>
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-12">
+                    <img class="img-fluid col-md-6 offset-md-3" src="./static/img/flask.png">
+                </div>
+                <div class="col-12">
+                    <form class="col-md-6 offset-md-3 text-center" method="GET" action="{{ url_for('search') }}">
+                        <input type="text" class="form-control" name="keyword" placeholder="Type to search...">
+                        <br>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
